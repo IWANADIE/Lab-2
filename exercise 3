@@ -1,12 +1,17 @@
+def main():
+    display_main_menu()
+    get_user_input()
+
 def display_main_menu():
     print("Enter some number separated by commas(e.g. 5, 67, 32)")
 def get_user_input():
-    display_main_menu()
     x = input()
     print("You entered: " + x)
-    y = x.split
+    y = x.split(",")
     print(y)
-    mylist = ["apple", "banana", "cherry"]
+    mylist = y
     print(mylist)
+    z = list(map(float, mylist))
+    print(z)
 
-get_user_input()
+main()
